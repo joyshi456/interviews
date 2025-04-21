@@ -85,7 +85,7 @@ except Exception as e:
 
 
 # --- Load FAQ Data ---
-FAQ_FILE = "faq.json" 
+FAQ_FILE = "wonderschool/faq.json" 
 try:
     with open(FAQ_FILE, 'r', encoding='utf-8') as f:
         faq_data = json.load(f)["faq_database"]

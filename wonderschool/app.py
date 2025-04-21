@@ -207,7 +207,7 @@ def generate_general_response(user_message):
             model=GEMINI_MODEL_NAME,
             messages=messages,
             temperature=0.1, #prevent hallucinations
-            max_tokens=150,
+            max_tokens=50,
             n=1,
             stop=None,
             stream=False
@@ -256,9 +256,6 @@ with st.sidebar:
         st.session_state.messages = [{"role": "assistant", "content": "Welcome! How can I assist you?"}]
     st.button('Clear Chat History', on_click=clear_chat_history)
     st.info("Messages are categorized and logged for internal review.")
-    st.info("""
-    **Voice Input:** For this exercise, please use the text input. Adding direct voice input would require additional libraries or browser integration.
-    """)
 
 if "messages" not in st.session_state:
     st.session_state.messages = [{"role": "assistant", "content": "Welcome! How can I assist you?"}]

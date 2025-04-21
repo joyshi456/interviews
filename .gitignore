@@ -1,0 +1,30 @@
+# Python Virtual Environment
+venv/
+*.pyenv
+.env
+env/
+
+# Python Cache & Compiled Files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# OS-specific files (macOS, Windows)
+.DS_Store
+Thumbs.db
+
+# Secrets and Credentials (VERY IMPORTANT!)
+# Ensure these files are NEVER committed
+credentials.json
+.streamlit/
+# secrets.toml # Covered by ignoring .streamlit/, but explicit doesn't hurt
+
+# IDE/Editor directories (Optional but common)
+.vscode/
+.idea/
+
+# Build artifacts (Optional)
+dist/
+build/
+*.egg-info/

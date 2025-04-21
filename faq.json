@@ -1,0 +1,44 @@
+{
+    "faq_database": [
+      {
+        "topic_description": "Password Reset",
+        "answer": "To reset your password, click on the 'Forgot Password' link on the login page, and follow the instructions sent to your registered email."
+      },
+      {
+        "topic_description": "Updating Account Information",
+        "answer": "You can update your account information by logging into your account settings and editing your personal details or business information."
+      },
+      {
+        "topic_description": "Submitting an Invoice",
+        "answer": "To submit an invoice, go to the 'Billing' section of your account and click on 'Submit Invoice'."
+      },
+      {
+        "topic_description": "Service Pricing",
+        "answer": "Please refer to our Pricing page for detailed information on our services and packages."
+      },
+      {
+        "topic_description": "Changing Business Hours",
+        "answer": "To update your business hours, navigate to the 'Business Settings' section of your account and make the changes under 'Operating Hours'."
+      },
+      {
+        "topic_description": "Managing Class Roster (Adding/Removing Children)",
+        "answer": "To update your class roster, go to the 'Manage Classes' section in your account, where you can add or remove children as needed."
+      },
+      {
+        "topic_description": "Updating Childcare Program Details",
+        "answer": "Yes, you can update your program details in the 'Program Settings' section of your account."
+      },
+      {
+        "topic_description": "Reporting Technical Issues",
+        "answer": "If you're experiencing a technical issue, please go to the 'Support' section in your account and submit a ticket with a detailed description of the problem."
+      },
+      {
+        "topic_description": "Billing Questions/Assistance",
+        "answer": "For billing inquiries, please visit the 'Billing' section and review your payment history or contact our support team for further assistance."
+      },
+      {
+        "topic_description": "Cancelling Subscription/Service",
+        "answer": "To cancel your subscription, please visit the 'Subscription' section in your account settings, where you can select the 'Cancel Subscription' option."
+      }
+    ]
+  }

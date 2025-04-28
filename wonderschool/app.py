@@ -8,7 +8,6 @@ import os
 from openai import OpenAI
 import json 
 
-# --- Load Base Secrets (URL, Sheet Key, Local File Path) ---
 try:
     GEMINI_BASE_URL = st.secrets["GEMINI_BASE_URL"]
     SHEET_ID = st.secrets["SHEET_KEY"]

@@ -105,8 +105,18 @@ except Exception as e:
 
 # --- Define Categories ---
 # Using the simpler list based on previous code state
-CATEGORIES = ["Support Request", "Product Feedback", "Account Issue", "Pricing Inquiry", "Website Update", "Other"]
-
+CATEGORIES = [
+    "Return/Refund Request",
+    "Technical Support",
+    "Warranty/Registration",
+    "Order Cancellation",
+    "Product Information",
+    "Product Documentation",
+    "Usage Instructions",
+    "Product Defect/Malfunction",
+    "Product Compatibility",
+    "Quality Concern"
+]
 
 # --- Helper Functions ---
 def categorize_message_gemini(message):
@@ -116,10 +126,10 @@ def categorize_message_gemini(message):
         return "Error - Configuration Issue"
 
     system_prompt = f"""
-    You are an assistant that categorizes messages from child care providers.
+    You are an assistant that categorizes messages from customers looking for support.
     Analyze the following message and categorize it into ONE of the following categories ONLY:
     {', '.join(CATEGORIES)}
-    Output ONLY the category name. If none apply precisely, use 'Other'.
+    Output ONLY the category name.
     """
     messages = [
         {"role": "system", "content": system_prompt},
@@ -246,7 +256,7 @@ def store_request(timestamp, message, category, auto_response_content):
 # --- Streamlit App UI ---
 # (st.set_page_config, st.title, st.write, sidebar, message init/display) ...
 st.set_page_config(page_title="Provider Support")
-st.title("Wonderschool Provider Messaging")
+st.title("Assembled Case Classification")
 st.write("Hello Provider! How can we help you today? Send us a message below.")
 
 with st.sidebar:
